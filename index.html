@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maval Maratha Restro Menu</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- <link rel="preload" href="path/to/font.woff2" as="font" type="font/woff2" crossorigin="anonymous"> -->
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- Restaurant Header Section -->
+        <header class="restaurant-info">
+            <h1 class="restaurant-name"></h1>
+            <p class="restaurant-details"></p>
+        </header>
+
+        <nav class="category-nav">
+            <button onclick="filterDishes('thali')">Thali </button>
+            <button onclick="filterDishes('starters')">Starter</button>
+            <button onclick="filterDishes('chinese')">Chinese</button>
+            <button onclick="filterDishes('gravy')">Gravy</button>
+            <button onclick="filterDishes('handi')">Handi</button>
+            <button onclick="filterDishes('all')" style="background-color: #007bff;">All</button>
+        </nav>
+
+        <!-- Drinks Section -->
+        <section class="menu-section" id="drinks">
+            <div id="drinks-menu"></div>
+        </section>
+        
+        <!-- Soup Section -->
+        <section class="menu-section" id="soup">
+            <div id="soup-menu"></div>
+        </section>
+        
+        <!-- Starters Section -->
+        <section class="menu-section" id="starters-veg">
+            <div id="starters-veg-menu"></div>
+        </section>
+
+        <section class="menu-section" id="starters-nonveg">
+            <div id="starters-nonveg-menu"></div>
+        </section>
+
+        <!-- Chinese Section -->
+        <section class="menu-section" id="chinese">
+            <div id="chinese-veg-menu"></div>
+        </section>
+
+        <!-- Thali Section -->
+        <section class="menu-section" id="thali-veg">
+            <div id="thali-veg-menu"></div>
+        </section>
+        <section class="menu-section" id="thali-nonveg">
+            <div id="thali-nonveg-menu"></div>
+        </section>
+
+        <!-- Handi Section -->
+        <section class="menu-section" id="handi-veg">
+            <div id="handi-veg-menu"></div>
+        </section>
+        <section class="menu-section" id="handi-nonveg">
+            <div id="handi-nonveg-menu"></div>
+        </section>
+
+        <!-- Vegetarian Section -->
+        <section class="menu-section" id="vegetarian">
+            <div id="vegetarian-menu"></div>
+        </section>
+
+        <!-- Non-Vegetarian Section -->
+        <section class="menu-section" id="non-vegetarian">
+            <div id="nonvegetarian-menu"></div>
+        </section>
+
+        <!-- Breads Section -->
+        <section class="menu-section" id="breads">
+            <div id="breads-menu"></div>
+        </section>
+
+        <!-- Rice Section -->
+        <section class="menu-section" id="rice">
+            <div id="rice-menu"></div>
+        </section>
+
+
+        <!-- Footer Section -->
+        <footer class="footer">
+            <!-- Initial row (before menu expands) -->
+            <div class="footer-container" id="footer-main">
+                <button id="toggle-nav">MENU</button>
+
+            </div>
+            <span class="footer-text">Teyzee Menus! <a class="link" href="https://www.ariaprohotels.com/qr-code-menu/">-
+                    by AriaProHotels.com</a></span>
+
+            <!-- This part appears when menu is shown -->
+            <div id="menu-container">
+                <div class="menu-toggle-container">
+                    <button id="hide-nav">Hide Menu Sections</button>
+                </div>
+                <div id="menu-nav">
+                    <a href="#vegetarian">Vegetarian</a>
+                    <a href="#non-vegetarian">Non-Vegetarian</a>
+                    <a href="#drinks">Beverages</a>
+                    <a href="#soup">Soup</a>
+                    <a href="#rice">Biryani / Rice</a>
+                    <a href="#breads">Roti</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- if browser closed what happen -->
+    <script src="menu.js"></script> <!-- JavaScript File -->
+    
+</body>
+
+</html>
